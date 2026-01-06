@@ -5,7 +5,7 @@ export const useSocket = () => {
   const [socket, setSocket] = useState<Socket | null>(null);
 
   useEffect(() => {
-    const s = io("http://localhost:5000");
+    const s = io("https://intervue-live-pool.onrender.com");
     setSocket(s);
 
     return () => {
